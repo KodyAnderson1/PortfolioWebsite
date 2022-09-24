@@ -3,7 +3,9 @@
 :root {
   --primary-white: #fff;
   --primary-orange: #f9ab00;
-  --primary-dark: rgba(255, 255, 255, 0)
+  --primary-dark: rgba(255, 255, 255, 0);
+  --primary-red: #ef4035;
+  --priary-hover-red: #f33501;
 }
 
 
@@ -19,6 +21,15 @@ body {
   width: 16.25rem;
 }
 
+.navbar-brand-name>p {
+  color: var(--primary-white);
+  text-transform: uppercase;
+  color: var(--primary-white);
+  padding-top: 1.1rem;
+  position: absolute;
+
+}
+
 /********* MENU LINKS *************/
 nav a.nav-link {
   /* font-size: 0.8rem; */
@@ -28,7 +39,6 @@ nav a.nav-link {
 
 nav ul li {
   text-transform: uppercase;
-
 }
 
 .navbar-nav>li>a {
@@ -41,7 +51,7 @@ nav ul li {
 .navbar-brand {
   max-width: 17.25rem;
   padding: 0 !important;
-  height: 6rem;
+  height: 4rem;
 }
 
 .navbar-nav>li>a.active,
@@ -51,4 +61,69 @@ nav ul li {
 
 .navbar-nav>li>a:hover {
   border-top: 0.1875rem solid var(--primary-orange);
+}
+
+/************************ HEADER *****************************/
+
+.header-wrapper {
+  position: relative;
+  background: url(wall-and-laptop-background.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.main-info {
+  font-family: "Roboto Condensed", sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main-info h1 {
+  color: var(--primary-orange);
+  text-transform: uppercase;
+}
+
+
+
+/*************** Typed Text ****************/
+.typed-text {
+  font-size: 2rem;
+  color: var(--primary-white)
+}
+
+@media(max-width: 768px) {
+  .main-info h1 {
+    font-size: 1.5rem !important;
+  }
+
+  .typed-text {
+    font-size: 1.7rem !important;
+  }
+}
+
+/*************** HEADER MAIN OFFER BUTTON ****************/
+.btn-main-offer {
+  border: 1px solid var(--primary-red);
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: var(--primary-white);
+  margin: 2rem;
+  text-decoration: none;
+}
+
+.btn-main-offer:hover {
+  text-decoration: none;
+  background-color: var(--priary-hover-red);
+  color: var(--primary-white);
+  transition: .2s ease-in-out;
 }
