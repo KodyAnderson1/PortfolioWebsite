@@ -22,37 +22,43 @@ const Portfolio = () => {
             />
 
             <div className="overflow"></div>
-            {/* <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} /> */}
+            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
           {/*  */}
-          <div className="portfolio-image-box col d-flex justify-content-center">
+          <div
+            className="portfolio-image-box col d-flex justify-content-center"
+            onClick={(e) => window.open("https://github.com/KodyAnderson1/")}>
             <img
               src={portfolioWebsite}
               alt="Portfolio website with React and Bootstrap"
               className="portfolio-image"
             />
             <div className="overflow"></div>
-            {/* <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} /> */}
+            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
           {/*  */}
-          <div className="portfolio-image-box col d-flex justify-content-center">
+          <div
+            className="portfolio-image-box col d-flex justify-content-center"
+            onClick={(e) => window.open("https://github.com/KodyAnderson1/")}>
             <img
               src={trainReservations}
               alt="Train Reservation Project with Java and Java Swing"
               className="portfolio-image"
             />
             <div className="overflow"></div>
-            {/* <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} /> */}
+            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
           {/*  */}
-          <div className="portfolio-image-box col d-flex justify-content-center">
+          <div
+            className="portfolio-image-box col d-flex justify-content-center"
+            onClick={(e) => window.open("https://github.com/KodyAnderson1/")}>
             <img
               src={gradeCalculator}
               alt="UWF Club website with React and TailWind"
               className="portfolio-image"
             />
             <div className="overflow"></div>
-            {/* <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} /> */}
+            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
         </div>
       </div>
