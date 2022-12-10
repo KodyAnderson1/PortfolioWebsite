@@ -126,11 +126,12 @@ nav ul li {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: -2rem;
 }
 
 .profile-img {
   width: 23rem;
-  height: 25rem;
+  height: 23rem;
   border-radius: 50%;
   padding: .3rem;
   border: 1px solid var(--primary-orange);

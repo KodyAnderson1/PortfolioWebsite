@@ -24,25 +24,15 @@ const AboutMe = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, itaque perferendis.
             Dicta dolor fugiat animi laudantium debitis excepturi a impedit iusto, accusantium aut
             nam blanditiis accusamus laborum quaerat, reiciendis ut, aperiam corporis praesentium
-            minus dignissimos quae. Qui nam ipsum quisquam ab porro? Dolorum repudiandae perferendis
-            aliquid enim explicabo tempora laborum molestiae error et provident! Odit, reiciendis
-            atque ut, quasi rerum nemo praesentium minima quis dignissimos fuga magni repudiandae
-            nam! Incidunt voluptas animi quis? Recusandae laborum sed officia ab itaque quos
-            doloribus saepe consectetur necessitatibus sit? Accusantium sunt doloremque eligendi
-            atque animi similique velit rem repellendus! Numquam officia fuga quia consequuntur.
+            minus dignissimos quae. Qui nam ipsum quisquam ab porro?
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis dolor sit porro,
-            fuga obcaecati perspiciatis placeat molestias, alias dolorum reprehenderit amet beatae
-            nostrum in est! Eaque ipsa commodi saepe maxime sit iure rerum mollitia minima magnam
-            nam numquam iusto atque veniam magni incidunt, est velit porro vero neque officia ex
-            illum, ab vel qui. Officia repellat deleniti dicta provident illum neque omnis,
-            cupiditate aliquid id reprehenderit amet nemo, beatae dolor incidunt aut quidem cumque
-            tempora labore quisquam similique. Labore sint atque, veniam optio sunt neque aut
-            nesciunt blanditiis totam. Rerum sed magni earum quaerat aliquam, quia aperiam obcaecati
-            deserunt porro recusandae explicabo quidem beatae neque adipisci ipsa eveniet quis
-            error, provident corporis numquam nesciunt nihil. Possimus necessitatibus laboriosam qui
-            ad.
+            Dolorum repudiandae perferendis aliquid enim explicabo tempora laborum molestiae error
+            et provident! Odit, reiciendis atque ut, quasi rerum nemo praesentium minima quis
+            dignissimos fuga magni repudiandae nam! Incidunt voluptas animi quis? Recusandae laborum
+            sed officia ab itaque quos doloribus saepe consectetur necessitatibus sit? Accusantium
+            sunt doloremque eligendi atque animi similique velit rem repellendus! Numquam officia
+            fuga quia consequuntur.
           </p>
         </div>
       </div>
