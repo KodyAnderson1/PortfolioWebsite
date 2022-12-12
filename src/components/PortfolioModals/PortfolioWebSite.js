@@ -9,6 +9,8 @@ import { AiFillGithub } from "react-icons/ai";
 // AiFillGithub
 
 export function PortfolioWebsiteModal() {
+  const websiteURL = "https://github.com/KodyAnderson1/";
+  const githubURL = "https://github.com/KodyAnderson1/PortfolioWebsite";
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -31,29 +33,20 @@ export function PortfolioWebsiteModal() {
         <Modal.Header closeButton>
           <Modal.Title>
             Portfolio Website
-            <a
-              rel="noreferrer"
-              target="_blank"
-              className="text-black ms-3"
-              href="https://github.com/KodyAnderson1/">
+            <a rel="noreferrer" target="_blank" className="text-black ms-3" href={websiteURL}>
               <CgWebsite />
             </a>
-            <a
-              rel="noreferrer"
-              className="ms-3 text-black"
-              target="_blank"
-              href="https://github.com/KodyAnderson1/PortfolioWebsite">
+            <a rel="noreferrer" className="ms-3 text-black" target="_blank" href={githubURL}>
               <AiFillGithub />
             </a>
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <p>
-            This website was built with React and Bootstrap. Primarily built following a tutorial on
-            Udemy. Primarily learned CSS styling using custom classes, with small changes using
-            Bootstrap's. The Experience section's timeline as a large example. Using z-index, and
-            text manipulation as well as predefined colors were all great concepts learned from
-            building this website.
+            This website was built with React and Bootstrap and primarily made following a tutorial
+            on Udemy. I Mainly learned CSS styling (using custom classes) and making minor changes
+            using Bootstrap shorthand. The Experience & Timeline section is a prominent example of
+            new concepts: z-index, text manipulation, and predefined colors.
           </p>
           <p>
             Udemy course{" "}
@@ -67,7 +60,23 @@ export function PortfolioWebsiteModal() {
           </p>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="primary" onClick={handleClose}>
+          <div className="me-auto">
+            <a
+              rel="noreferrer"
+              className="text-white btn btn-primary"
+              target="_blank"
+              href={websiteURL}>
+              Website
+            </a>
+            <a
+              rel="noreferrer"
+              className="text-white btn btn-primary ms-1"
+              target="_blank"
+              href={githubURL}>
+              Github
+            </a>
+          </div>
+          <Button variant="danger" onClick={handleClose}>
             Close
           </Button>
         </Modal.Footer>

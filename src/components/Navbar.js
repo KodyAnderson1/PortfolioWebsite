@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { AiFillGithub } from "react-icons/ai";
+import { Link } from "react-scroll";
 
 export const Navbar = () => {
   return (
@@ -24,30 +24,30 @@ export const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item active">
-              <a className="nav-link" href="#">
-                Home<span className="sr-only">(current)</span>
-              </a>
+              <Link smooth={true} to="home" className="nav-link" href="#">
+                Home <span className="sr-only">(current)</span>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                About Me
-              </a>
+              <Link smooth={true} to="about" offset={-110} className="nav-link">
+                about me
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Experience
-              </a>
+              <Link smooth={true} to="experience" className="nav-link">
+                experience
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Portfolio
-              </a>
+              <Link smooth={true} to="portfolio" className="nav-link">
+                portfolio
+              </Link>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Contact Me
-              </a>
-            </li>
+            {/* <li className="nav-item">
+              <Link smooth={true} to="contact" offset={-110} className="nav-link">
+                Contact
+              </Link>
+            </li> */}
             <li className="nav-item">
               <a className="nav-link" href="https://github.com/KodyAnderson1">
                 <svg

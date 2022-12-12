@@ -1,5 +1,6 @@
 import React from "react";
 import Typed from "react-typed";
+import ExampleModal from "./ContactModal";
 
 const Header = () => {
   return (
@@ -13,9 +14,7 @@ const Header = () => {
           backSpeed={60}
           loop
         />
-        <a href="#" className="btn-main-offer">
-          Contact Me
-        </a>
+        <ExampleModal />
       </div>
     </div>
   );
