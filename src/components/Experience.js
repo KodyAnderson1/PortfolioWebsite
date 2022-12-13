@@ -51,8 +51,8 @@ const Experience = () => {
                   <b>GPA: 3.40</b>
                 </p>
                 <p>
-                  Classes from this semester were <b>Data Mining</b> where we used the R programming
-                  language with R Studio to mine different data sets. Another notable class was{" "}
+                  Noatable Classes from this semester were <b>Data Mining</b> where we used the R
+                  programming language with R Studio to mine different data sets, and{" "}
                   <b>Discrete Structures</b> where we learned about mathematical logic, different
                   types of encryptions, proofs, and trees/graphs.
                 </p>
