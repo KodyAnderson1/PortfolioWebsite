@@ -8,9 +8,9 @@ import sql from "../images/skillssvg/sql.svg";
 import bootstrap from "../images/skillssvg/bootstrap.svg";
 import firebase from "../images/skillssvg/firebase-icon.svg";
 
-import typescript from "../images/skillssvg/typescript.svg";
-import python from "../images/skillssvg/python.svg";
-import csharp from "../images/skillssvg/c-sharp.svg";
+// import typescript from "../images/skillssvg/typescript.svg";
+// import python from "../images/skillssvg/python.svg";
+// import csharp from "../images/skillssvg/c-sharp.svg";
 
 export const imgObjs = [
   {
