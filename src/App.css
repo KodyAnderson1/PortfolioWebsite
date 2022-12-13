@@ -103,6 +103,61 @@ nav ul li {
   }
 }
 
+/******************************* Down Arrow *****************************/
+.down-arrow {
+  position: absolute;
+  top: calc(87vh - 60px);
+  left: calc(50% - 14px);
+  width: 0;
+  height: 30px;
+  border: 2px solid;
+  border-radius: 2px;
+  color: var(--primary-white);
+  animation: jumpInfinite 1.5s infinite;
+}
+
+.down-arrow:after {
+  content: " ";
+  position: absolute;
+  top: 12px;
+  left: -8px;
+  width: 16px;
+  height: 16px;
+  border-bottom: 4px solid;
+  border-right: 4px solid;
+  border-radius: 4px;
+  transform: rotateZ(45deg);
+}
+
+@keyframes jumpInfinite {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 20px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+/******************************** Skills ******************************/
+.skills-heading {
+  color: var(--primary-orange);
+  text-transform: uppercase;
+}
+
+.skills-img-wrapper {
+  height: 10rem;
+  width: 10rem;
+}
+
+.skills-img-text {
+  text-transform: uppercase;
+  margin-bottom: 3rem !important;
+}
+
+
 /*********************** HEADER MAIN OFFER BUTTON *********************/
 .btn-main-offer {
   border: 1px solid var(--primary-red);
@@ -127,7 +182,6 @@ nav ul li {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-top: -2rem; */
 }
 
 .profile-img {
@@ -248,7 +302,7 @@ nav ul li {
 /******************************* Portfolio *****************************/
 .portfolio-wrapper {
   background: var(--primary-light-grey);
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
 
 .portfolio-wrapper h1 {

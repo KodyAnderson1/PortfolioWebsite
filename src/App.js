@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import AboutMe from "./components/AboutMe";
 import Experience from "./components/Experience";
 import Portfolio from "./components/Portfolio";
+import { Skills } from "./components/Skills";
 
 function App() {
   return (
@@ -12,8 +13,9 @@ function App() {
       <Navbar />
       <Header />
       <AboutMe />
-      <Experience />
+      <Skills />
       <Portfolio />
+      <Experience />
     </>
   );
 }

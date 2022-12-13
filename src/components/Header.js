@@ -15,6 +15,7 @@ const Header = () => {
           loop
         />
         <ExampleModal />
+        <div class="down-arrow"></div>
       </div>
     </div>
   );

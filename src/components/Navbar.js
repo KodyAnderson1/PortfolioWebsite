@@ -34,15 +34,21 @@ export const Navbar = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link smooth={true} to="experience" className="nav-link">
-                experience
+              <Link smooth={true} to="skills" className="nav-link">
+                Skills
               </Link>
             </li>
             <li className="nav-item">
               <Link smooth={true} to="portfolio" className="nav-link">
-                portfolio
+                projects
               </Link>
             </li>
+            <li className="nav-item">
+              <Link smooth={true} to="experience" className="nav-link">
+                experience
+              </Link>
+            </li>
+
             <li className="nav-item">
               <a
                 rel="noreferrer"
