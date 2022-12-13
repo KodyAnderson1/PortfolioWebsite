@@ -9,7 +9,7 @@ import { AiFillGithub } from "react-icons/ai";
 // AiFillGithub
 
 export function PortfolioWebsiteModal() {
-  const websiteURL = "https://github.com/KodyAnderson1/";
+  const websiteURL = "https://kanderson.dev/";
   const githubURL = "https://github.com/KodyAnderson1/PortfolioWebsite";
   const [show, setShow] = useState(false);
 

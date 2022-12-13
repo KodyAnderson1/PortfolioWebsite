@@ -4,18 +4,18 @@ import headshot from "../images/headshot.jpg";
 const AboutMe = () => {
   return (
     <section id="about">
-      <div className="container p-3">
+      <div className="container p-3 mb-5">
         <div className="row">
           <div className="col-lg-6 col-xm-12">
-            <div className="photo-wrapper mb-5">
+            <div className="photo-wrapper">
               <img className="profile-img" src={headshot} alt="author's headshot" />
             </div>
           </div>
           <div className="col-lg-6 col-xm-12">
-            <h2 className="about-heading">About Me</h2>
+            <h2 className="about-heading py-4">About Me</h2>
             <p>
-              My Name is Kody Anderson. I am a senior at The University of West Florida (UWF) and am
-              graduating in December 2023. I am majoring in Software Design & Development with a
+              My Name is Kody Anderson. I am a senior at The University of West Florida (UWF) and
+              will graduate in December 2023. I am majoring in Software Design & Development with a
               minor in Computer Science and a Cybersecurity certificate. My overall UWF GPA is{" "}
               <b>3.69</b>, with a major GPA of <b>3.94</b>.
             </p>

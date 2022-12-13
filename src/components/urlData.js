@@ -61,5 +61,5 @@ export const imgObjs = [
   //   {
   //     url: python,
   //     name: "typescript",
-  //   }
+  //   },
 ];
