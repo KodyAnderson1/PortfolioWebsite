@@ -64,7 +64,7 @@ const Experience = () => {
               <div className="timeline-content">
                 <h3>Fall 2022</h3>
                 <p>
-                  <b>Notable Marks TBD</b>
+                  <b>Dean's List | GPA: 3.86</b>
                 </p>
                 <p>
                   <b>Data Structures & Algorithms I</b>, where we learned about best/worst case time

@@ -17,7 +17,7 @@ const AboutMe = () => {
               My Name is Kody Anderson. I am a senior at The University of West Florida (UWF) and
               will graduate in December 2023. I am majoring in Software Design & Development with a
               minor in Computer Science and a Cybersecurity certificate. My overall UWF GPA is{" "}
-              <b>3.69</b>, with a major GPA of <b>3.94</b>.
+              <b>3.73</b>, with a major GPA of <b>3.90</b>.
             </p>
             <p>
               This previous semester (Fall 2022), I took Data Structures & Algorithms I, where we
