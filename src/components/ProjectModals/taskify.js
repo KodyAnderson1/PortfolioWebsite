@@ -43,9 +43,9 @@ export function TaskifyModal() {
         </Modal.Header>
         <Modal.Body>
           <p>
-            This website was built with React and Typescript. Primarily made to quickly familiarize
-            myself with typescript following a youtube tutorial. Also learned how to create drag and
-            drop components during the process. Hosted by firebase.
+            This website was built with React and Typescript and was primarily made to familiarize
+            me with typescript following a youtube tutorial. I also learned how to create
+            drag-and-drop components during the process—hosted by firebase.
           </p>
           <p>
             Youtube link{" "}
