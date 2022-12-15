@@ -1,16 +1,15 @@
 import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
-import taskifyPicture from "../../images/project_imgs/taskify.png";
+// import portfolioWebsite from "../../images/project_imgs/portfolio-website.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
 import { CgWebsite } from "react-icons/cg";
 import { AiFillGithub } from "react-icons/ai";
 // AiFillGithub
 
-export function TaskifyModal() {
-  const websiteURL = "https://taskify-a2209.web.app/";
-  const githubURL = "https://github.com/KodyAnderson1/taskify";
+export function SingleProjectModal(props) {
+  const project = props.project;
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -21,8 +20,8 @@ export function TaskifyModal() {
       <div className="portfolio-image-box col d-flex justify-content-center" onClick={handleShow}>
         <img
           className="portfolio-image"
-          src={taskifyPicture}
-          alt="Taskify Project with Typescript, and React."
+          src={project.imagePath}
+          alt={`img of ${project.projectName}`}
         />
 
         <div className="overflow"></div>
@@ -32,43 +31,59 @@ export function TaskifyModal() {
       <Modal show={show} onHide={handleClose} centered>
         <Modal.Header closeButton>
           <Modal.Title>
-            Taskify
-            <a rel="noreferrer" target="_blank" className="text-black ms-3" href={websiteURL}>
-              <CgWebsite />
-            </a>
-            <a rel="noreferrer" className="ms-3 text-black" target="_blank" href={githubURL}>
+            {project.projectName}
+            {project.websiteURL ? (
+              <a
+                rel="noreferrer"
+                target="_blank"
+                className="text-black ms-3"
+                href={project.websiteURL}>
+                <CgWebsite />
+              </a>
+            ) : (
+              <></>
+            )}
+            <a
+              rel="noreferrer"
+              className="ms-3 text-black"
+              target="_blank"
+              href={project.githubURL}>
               <AiFillGithub />
             </a>
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <p>
-            This website was built with React and Typescript and was primarily made to familiarize
-            me with typescript following a youtube tutorial. I also learned how to create
-            drag-and-drop components during the process—hosted by firebase.
-          </p>
-          <p>
-            Youtube link{" "}
-            <a rel="noreferrer" target="_blank" href="https://www.youtube.com/watch?v=FJDVKeh7RJI">
-              here
-            </a>
-            .
-          </p>
+          <p>{project.description}</p>
+          {project.tutorialName ? (
+            <p>
+              {project.tutorialName} course{" "}
+              <a rel="noreferrer" target="_blank" href={project.tutorialURL}>
+                here
+              </a>
+              .
+            </p>
+          ) : (
+            <></>
+          )}
         </Modal.Body>
         <Modal.Footer>
           <div className="me-auto">
-            <a
-              rel="noreferrer"
-              className="text-white btn btn-primary"
-              target="_blank"
-              href={websiteURL}>
-              Website
-            </a>
+            {project.websiteURL ? (
+              <a
+                rel="noreferrer"
+                className="text-white btn btn-primary"
+                target="_blank"
+                href={project.websiteURL}>
+                Website
+              </a>
+            ) : (
+              <></>
+            )}
             <a
               rel="noreferrer"
               className="text-white btn btn-primary ms-1"
               target="_blank"
-              href={githubURL}>
+              href={project.githubURL}>
               Github
             </a>
           </div>

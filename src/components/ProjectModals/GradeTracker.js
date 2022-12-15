@@ -2,12 +2,15 @@ import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import gradeCalculator from "../../images/project_imgs/grade-calculator.png";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
 import { CgWebsite } from "react-icons/cg";
 import { AiFillGithub } from "react-icons/ai";
 
 export function GradeTrackerModal() {
+  const websiteURL = "https://grade-calculator-uwf.web.app/courses";
+  const githubURL = "https://github.com/KodyAnderson1/GradeTracker";
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -30,18 +33,10 @@ export function GradeTrackerModal() {
         <Modal.Header closeButton>
           <Modal.Title>
             Grade Calculator
-            <a
-              rel="noreferrer"
-              target="_blank"
-              className="text-black ms-3"
-              href="https://grade-calculator-uwf.web.app/courses">
+            <a rel="noreferrer" target="_blank" className="text-black ms-3" href={websiteURL}>
               <CgWebsite />
             </a>
-            <a
-              rel="noreferrer"
-              className="text-black ms-3"
-              target="_blank"
-              href="https://github.com/KodyAnderson1/GradeTracker">
+            <a rel="noreferrer" className="text-black ms-3" target="_blank" href={githubURL}>
               <AiFillGithub />
             </a>
           </Modal.Title>
@@ -67,14 +62,14 @@ export function GradeTrackerModal() {
               rel="noreferrer"
               className="text-white btn btn-primary"
               target="_blank"
-              href="https://grade-calculator-uwf.web.app/courses">
+              href={websiteURL}>
               Website
             </a>
             <a
               rel="noreferrer"
               className="text-white btn btn-primary ms-1"
               target="_blank"
-              href="https://github.com/KodyAnderson1/GradeTracker">
+              href={githubURL}>
               Github
             </a>
           </div>

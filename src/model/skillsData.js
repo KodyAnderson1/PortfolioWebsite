@@ -7,10 +7,10 @@ import react from "../images/skills_svgs/react.svg";
 import sql from "../images/skills_svgs/sql.svg";
 import bootstrap from "../images/skills_svgs/bootstrap.svg";
 import firebase from "../images/skills_svgs/firebase-icon.svg";
-
-// import typescript from "../images/skillssvg/typescript.svg";
-// import python from "../images/skillssvg/python.svg";
-// import csharp from "../images/skillssvg/c-sharp.svg";
+import typescript from "../images/skills_svgs/typescript.svg";
+import nodejs from "../images/skills_svgs/nodejs.svg";
+// import python from "../images/skills_svgs/python.svg";
+// import csharp from "../images/skills_svgs/c-sharp.svg";
 
 export const imgObjs = [
   {
@@ -19,17 +19,22 @@ export const imgObjs = [
   },
 
   {
-    url: java,
-    name: "Java",
-  },
-  {
     url: js,
     name: "JavaScript",
+  },
+  {
+    url: typescript,
+    name: "typescript",
+  },
+  {
+    url: java,
+    name: "Java",
   },
   {
     url: react,
     name: "React",
   },
+
   {
     url: bootstrap,
     name: "Bootstrap",
@@ -41,6 +46,10 @@ export const imgObjs = [
   {
     url: html,
     name: "HTML",
+  },
+  {
+    url: nodejs,
+    name: "nodejs",
   },
   {
     url: sql,
@@ -55,11 +64,7 @@ export const imgObjs = [
   //     name: "C#",
   //   },
   //   {
-  //     url: typescript,
-  //     name: "Python",
-  //   },
-  //   {
   //     url: python,
-  //     name: "typescript",
+  //     name: "python",
   //   },
 ];

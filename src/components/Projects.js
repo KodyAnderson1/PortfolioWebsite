@@ -1,8 +1,7 @@
 import React from "react";
 import { GradeTrackerModal } from "./ProjectModals/GradeTracker";
-import { PortfolioWebsiteModal } from "./ProjectModals/PortfolioWebSite";
-import { TrainReservationsModal } from "./ProjectModals/TrainReservations";
-import { TaskifyModal } from "./ProjectModals/taskify";
+import { projects } from "../model/projectsData";
+import { SingleProjectModal } from "./ProjectModals/SingleProjectModal";
 // import { NoWestCollectiveModal } from "./PortfolioModals/NoWestCollective";
 
 const Projects = () => {
@@ -13,10 +12,10 @@ const Projects = () => {
           <h1 className="text-uppercase text-center py-5">Projects</h1>
           <div className="image-box-wrapper row">
             <GradeTrackerModal />
-            <PortfolioWebsiteModal />
-            <TrainReservationsModal />
-            <TaskifyModal />
-            {/* <NoWestCollectiveModal /> */}
+
+            {projects.map((project) => (
+              <SingleProjectModal project={project} />
+            ))}
           </div>
         </div>
       </div>

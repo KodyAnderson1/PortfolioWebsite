@@ -1,4 +1,5 @@
-import { imgObjs } from "./urlData";
+// import { imgObjs } from "./urlData";
+import { imgObjs } from "../model/skillsData";
 
 const languageSkills = imgObjs.map((language) => {
   return (
