@@ -1,10 +1,11 @@
 import React from "react";
-import { GradeTrackerModal } from "./PortfolioModals/GradeTracker";
-import { PortfolioWebsiteModal } from "./PortfolioModals/PortfolioWebSite";
-import { TrainReservationsModal } from "./PortfolioModals/TrainReservations";
+import { GradeTrackerModal } from "./ProjectModals/GradeTracker";
+import { PortfolioWebsiteModal } from "./ProjectModals/PortfolioWebSite";
+import { TrainReservationsModal } from "./ProjectModals/TrainReservations";
+import { TaskifyModal } from "./ProjectModals/taskify";
 // import { NoWestCollectiveModal } from "./PortfolioModals/NoWestCollective";
 
-const Portfolio = () => {
+const Projects = () => {
   return (
     <section id="portfolio">
       <div className="portfolio-wrapper">
@@ -14,6 +15,7 @@ const Portfolio = () => {
             <GradeTrackerModal />
             <PortfolioWebsiteModal />
             <TrainReservationsModal />
+            <TaskifyModal />
             {/* <NoWestCollectiveModal /> */}
           </div>
         </div>
@@ -22,4 +24,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Projects;

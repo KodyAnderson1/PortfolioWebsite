@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
-import trainReservations from "../../images/train-reservations.png";
+import trainReservations from "../../images/project_imgs/train-reservations.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
 import { AiFillGithub } from "react-icons/ai";

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
-import gradeCalculator from "../../images/grade-calculator.png";
+import gradeCalculator from "../../images/project_imgs/grade-calculator.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
 import { CgWebsite } from "react-icons/cg";

@@ -1,12 +1,12 @@
-import cpp from "../images/skillssvg/cpp.svg";
-import css from "../images/skillssvg/css.svg";
-import html from "../images/skillssvg/html.svg";
-import java from "../images/skillssvg/java.svg";
-import js from "../images/skillssvg/js.svg";
-import react from "../images/skillssvg/react.svg";
-import sql from "../images/skillssvg/sql.svg";
-import bootstrap from "../images/skillssvg/bootstrap.svg";
-import firebase from "../images/skillssvg/firebase-icon.svg";
+import cpp from "../images/skills_svgs/cpp.svg";
+import css from "../images/skills_svgs/css.svg";
+import html from "../images/skills_svgs/html.svg";
+import java from "../images/skills_svgs/java.svg";
+import js from "../images/skills_svgs/js.svg";
+import react from "../images/skills_svgs/react.svg";
+import sql from "../images/skills_svgs/sql.svg";
+import bootstrap from "../images/skills_svgs/bootstrap.svg";
+import firebase from "../images/skills_svgs/firebase-icon.svg";
 
 // import typescript from "../images/skillssvg/typescript.svg";
 // import python from "../images/skillssvg/python.svg";
