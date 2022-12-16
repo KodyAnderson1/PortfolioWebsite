@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
-// import portfolioWebsite from "../../images/project_imgs/portfolio-website.png";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
 import { CgWebsite } from "react-icons/cg";
 import { AiFillGithub } from "react-icons/ai";
-// AiFillGithub
 
 export function SingleProjectModal(props) {
   const project = props.project;
@@ -15,13 +14,58 @@ export function SingleProjectModal(props) {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+  const additionalInfo = project.additionalDescription ? (
+    <>
+      {project.additionalDescription.description}
+      <ul>
+        {project.additionalDescription.ULDescription.map((li, index) => (
+          <li key={index}>{li}</li>
+        ))}
+      </ul>
+    </>
+  ) : (
+    <></>
+  );
+
+  const tutorialInfo = project.tutorialName ? (
+    <p>
+      {project.tutorialName} course{" "}
+      <a rel="noreferrer" target="_blank" href={project.tutorialURL}>
+        here
+      </a>
+      .
+    </p>
+  ) : (
+    <></>
+  );
+
+  const websiteInfoHeader = project.websiteURL ? (
+    <a rel="noreferrer" target="_blank" className="text-black ms-3" href={project.websiteURL}>
+      <CgWebsite />
+    </a>
+  ) : (
+    <></>
+  );
+
+  const websiteInfoFooter = project.websiteURL ? (
+    <a
+      rel="noreferrer"
+      className="text-white btn btn-primary"
+      target="_blank"
+      href={project.websiteURL}>
+      Website
+    </a>
+  ) : (
+    <></>
+  );
+
   return (
     <>
       <div className="portfolio-image-box col d-flex justify-content-center" onClick={handleShow}>
         <img
           className="portfolio-image"
           src={project.imagePath}
-          alt={`img of ${project.projectName}`}
+          alt={`img of ${project.projectName} app`}
         />
 
         <div className="overflow"></div>
@@ -32,17 +76,7 @@ export function SingleProjectModal(props) {
         <Modal.Header closeButton>
           <Modal.Title>
             {project.projectName}
-            {project.websiteURL ? (
-              <a
-                rel="noreferrer"
-                target="_blank"
-                className="text-black ms-3"
-                href={project.websiteURL}>
-                <CgWebsite />
-              </a>
-            ) : (
-              <></>
-            )}
+            {websiteInfoHeader}
             <a
               rel="noreferrer"
               className="ms-3 text-black"
@@ -54,31 +88,12 @@ export function SingleProjectModal(props) {
         </Modal.Header>
         <Modal.Body>
           <p>{project.description}</p>
-          {project.tutorialName ? (
-            <p>
-              {project.tutorialName} course{" "}
-              <a rel="noreferrer" target="_blank" href={project.tutorialURL}>
-                here
-              </a>
-              .
-            </p>
-          ) : (
-            <></>
-          )}
+          {additionalInfo}
+          {tutorialInfo}
         </Modal.Body>
         <Modal.Footer>
           <div className="me-auto">
-            {project.websiteURL ? (
-              <a
-                rel="noreferrer"
-                className="text-white btn btn-primary"
-                target="_blank"
-                href={project.websiteURL}>
-                Website
-              </a>
-            ) : (
-              <></>
-            )}
+            {websiteInfoFooter}
             <a
               rel="noreferrer"
               className="text-white btn btn-primary ms-1"
