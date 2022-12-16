@@ -56,10 +56,10 @@ export const projects = [
     tutorialName: "Youtube",
     tutorialURL: "https://www.youtube.com/watch?v=FJDVKeh7RJI",
   },
-  {
-    projectName: "No.West Collective",
-    githubURL: "https://github.com/KodyAnderson1/",
-    description: noWestCollectiveDescription,
-    imagePath: "",
-  },
+  // {
+  //   projectName: "No.West Collective",
+  //   githubURL: "https://github.com/KodyAnderson1/",
+  //   description: noWestCollectiveDescription,
+  //   imagePath: "",
+  // },
 ];
