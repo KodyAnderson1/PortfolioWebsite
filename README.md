@@ -6,7 +6,7 @@ This project was inspired by a tutorial [here](https://www.udemy.com/course/buil
 
 
 ## Concept / Project Overview
-Primarily leveraging React, this application uses (React) components and custom CSS classes to style and customize my portfolio website. The intended purpose of following a tutorial was to familiarize me with CSS features such as z-index, text manipulation, and creating shapes/lines. Other styles used were creating abstract components to map over data and creating reusable components.
+Primarily leveraging React, this application uses (React) components and custom CSS classes to style and customize my portfolio website. The intended purpose of following a tutorial was to familiarize me with CSS features such as z-index, text manipulation, and creating shapes/lines. Other styles used were creating abstract components to map over data to create reusable components.
 
 ## Languages and Libraries
 - Javascript
