@@ -9,6 +9,9 @@ import bootstrap from "../images/skills_svgs/bootstrap.svg";
 import firebase from "../images/skills_svgs/firebase-icon.svg";
 import typescript from "../images/skills_svgs/typescript.svg";
 import nodejs from "../images/skills_svgs/nodejs.svg";
+import mongodb from "../images/skills_svgs/mongodb.svg";
+
+// import spring from "../images/skills_svgs/spring.png";
 // import python from "../images/skills_svgs/python.svg";
 // import csharp from "../images/skills_svgs/c-sharp.svg";
 
@@ -17,7 +20,6 @@ export const imgObjs = [
     url: cpp,
     name: "C++",
   },
-
   {
     url: js,
     name: "JavaScript",
@@ -59,10 +61,18 @@ export const imgObjs = [
     url: firebase,
     name: "firebase",
   },
-  //   {
-  //     url: csharp,
-  //     name: "C#",
-  //   },
+  {
+    url: mongodb,
+    name: "MongoDB",
+  },
+  // {
+  //   url: csharp,
+  //   name: "C#",
+  // },
+  // {
+  //   url: spring,
+  //   name: "Java Spring Boot",
+  // },
   //   {
   //     url: python,
   //     name: "python",

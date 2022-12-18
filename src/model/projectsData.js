@@ -2,6 +2,7 @@ import portfolioWebsite from "../images/project_imgs/portfolio-website.png";
 import trainReservations from "../images/project_imgs/train-reservations.png";
 import taskifyPicture from "../images/project_imgs/taskify.png";
 import gradeCalculator from "../images/project_imgs/grade-calculator.png";
+import student from "../images/project_imgs/student_full_stack.png";
 
 const portfolioWebsiteDescription =
   "This website was built with React and Bootstrap and primarily made following a tutorial on Udemy. I Mainly learned CSS styling (using custom classes) and making minor changes using Bootstrap shorthand. The Experience & Timeline section is a prominent example of new concepts: z-index, text manipulation, and predefined colors.";
@@ -17,6 +18,9 @@ const GcUlList = [
   "Email: gradecalculator@example.com",
   "Password: 123456",
 ];
+const StudentDescription =
+  "This project is a simple full-stack application built with Java Spring(boot), React (with Materials Icon for prebuilt UI components), and MySQL. This project is a WIP, and I plan to expand on it to create a student management application for students, faculty, and admins. To see installation instructions, view the readme for the project on GitHub.";
+
 const noWestCollectiveDescription =
   "This is a website for a club at The University of West Florida (UWF). The site was built with React and Tailwind CSS.";
 
@@ -55,6 +59,14 @@ export const projects = [
     imagePath: taskifyPicture,
     tutorialName: "Youtube",
     tutorialURL: "https://www.youtube.com/watch?v=FJDVKeh7RJI",
+  },
+  {
+    projectName: "Portfolio Website",
+    githubURL: "https://github.com/KodyAnderson1/StudentDatabaseFullStack",
+    description: StudentDescription,
+    imagePath: student,
+    tutorialName: "Youtube",
+    tutorialURL: "https://www.youtube.com/watch?v=O_XL9oQ1_To",
   },
   // {
   //   projectName: "No.West Collective",
