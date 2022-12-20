@@ -61,7 +61,7 @@ export const projects = [
     tutorialURL: "https://www.youtube.com/watch?v=FJDVKeh7RJI",
   },
   {
-    projectName: "Portfolio Website",
+    projectName: "Student Management System",
     githubURL: "https://github.com/KodyAnderson1/StudentDatabaseFullStack",
     description: StudentDescription,
     imagePath: student,
