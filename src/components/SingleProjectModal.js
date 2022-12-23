@@ -61,7 +61,9 @@ export function SingleProjectModal(props) {
 
   return (
     <>
-      <div className="portfolio-image-box col d-flex justify-content-center" onClick={handleShow}>
+      <div
+        className="portfolio-image-box col col-lg-3 col-xl-2 d-flex justify-content-center"
+        onClick={handleShow}>
         <img
           className="portfolio-image"
           src={project.imagePath}

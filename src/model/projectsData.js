@@ -34,9 +34,9 @@ const GcUlList = [
 ];
 
 const NotesAppDesc =
-  "This note-taking application uses a react library to implement markdown in the body to style the text as the user sees fit." +
-  " It can search by the title of the notes or by the tags the user creates when making or editing the note." +
-  " Tags are also able to be edited or deleted. End goal of this project will be to connect itself to a database instead of using local storage.";
+  "This note-taking application uses React and TypeScript with a react library to implement markdown in the body to style the text as the user sees fit." +
+  " It can search by the title of the notes or by the tags the user creates when making or editing a note." +
+  " Tags are also able to be edited or deleted. End goal of this project will be to connect to a database instead of using local storage.";
 
 // const noWestCollectiveDescription =
 //   "This is a website for a club at The University of West Florida (UWF). The site was built with React and Tailwind CSS.";
