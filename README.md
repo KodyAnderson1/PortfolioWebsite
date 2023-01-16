@@ -20,5 +20,5 @@ Primarily leveraging React, this application uses (React) components and custom 
 To install on your local machine, pull the GitHub repo, navigate into the project's root directory, type `npm install` and then `npm start` in your console, and a localhost version of the app should open in your default browser. To see an active application instance, see the URL at the top.
 
 ## Future Development
-- Update the experience & timeline section to map over data to create the section instead of hardcoded text and redundant use of code.
+- [x] Projects / Skills section pulls from JSON file(s) and maps over reusable component
 - Use a database to hold data
