@@ -24,27 +24,27 @@ export const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item active">
-              <Link smooth={true} to="home" className="nav-link" href="#">
+              <Link smooth={false} to="home" className="nav-link" href="#">
                 Home <span className="sr-only">(current)</span>
               </Link>
             </li>
             <li className="nav-item">
-              <Link smooth={true} to="about" offset={-110} className="nav-link">
+              <Link smooth={false} to="about" offset={-110} className="nav-link">
                 about me
               </Link>
             </li>
             <li className="nav-item">
-              <Link smooth={true} to="skills" className="nav-link">
+              <Link smooth={false} to="skills" className="nav-link">
                 Skills
               </Link>
             </li>
             <li className="nav-item">
-              <Link smooth={true} to="portfolio" className="nav-link">
+              <Link smooth={false} to="portfolio" className="nav-link">
                 projects
               </Link>
             </li>
             <li className="nav-item">
-              <Link smooth={true} to="experience" className="nav-link">
+              <Link smooth={false} to="experience" className="nav-link">
                 experience
               </Link>
             </li>
@@ -73,7 +73,7 @@ export const Navbar = () => {
                 target="_blank"
                 className="nav-link"
                 href="https://www.linkedin.com/in/kody-anderson/">
-                <AiFillLinkedin />
+                <AiFillLinkedin size={25} />
               </a>
             </li>
           </ul>

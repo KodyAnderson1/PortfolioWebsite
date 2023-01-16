@@ -38,6 +38,8 @@ const NotesAppDesc =
   " It can search by the title of the notes or by the tags the user creates when making or editing a note." +
   " Tags are also able to be edited or deleted. End goal of this project will be to connect to a database instead of using local storage.";
 
+const moviesDesc =
+  "This application uses TypeScript and React to search the TV Maze API and favorite and tv shows or movies you can find!";
 // const noWestCollectiveDescription =
 //   "This is a website for a club at The University of West Florida (UWF). The site was built with React and Tailwind CSS.";
 
@@ -51,6 +53,7 @@ export const projects = [
       description: GCAdditional,
       ULDescription: GcUlList,
     },
+    stack: ["React", "JavaScript", "NoSQL"],
     imagePath: gradeCalculator,
   },
   {
@@ -61,12 +64,16 @@ export const projects = [
     imagePath: portfolioWebsite,
     tutorialName: "Udemy",
     tutorialURL: "https://www.udemy.com/course/build-portfolio-with-reactjs-and-bootstrap/",
+    stack: ["Bootstrap", "React", "JavaScript"],
   },
   {
-    projectName: "Train Reservation System",
-    githubURL: "https://github.com/KodyAnderson1/TrainReservationSystem",
-    description: TrainReservationsDescription,
-    imagePath: trainReservations,
+    projectName: "Student Management System",
+    githubURL: "https://github.com/KodyAnderson1/StudentDatabaseFullStack",
+    description: StudentDescription,
+    imagePath: student,
+    tutorialName: "Youtube",
+    tutorialURL: "https://www.youtube.com/watch?v=O_XL9oQ1_To",
+    stack: ["React", "Java", "MySQL"],
   },
   {
     projectName: "Taskify",
@@ -76,14 +83,7 @@ export const projects = [
     imagePath: taskifyPicture,
     tutorialName: "Youtube",
     tutorialURL: "https://www.youtube.com/watch?v=FJDVKeh7RJI",
-  },
-  {
-    projectName: "Student Management System",
-    githubURL: "https://github.com/KodyAnderson1/StudentDatabaseFullStack",
-    description: StudentDescription,
-    imagePath: student,
-    tutorialName: "Youtube",
-    tutorialURL: "https://www.youtube.com/watch?v=O_XL9oQ1_To",
+    stack: ["Bootstrap", "TypeScript", "React"],
   },
   {
     projectName: "Notes App",
@@ -93,6 +93,23 @@ export const projects = [
     imagePath: notesApp,
     tutorialName: "Youtube",
     tutorialURL: "https://www.youtube.com/watch?v=j898RGRw0b4",
+    stack: ["CSS", "TypeScript", "React"],
+  },
+  {
+    projectName: "Train Reservation System",
+    githubURL: "https://github.com/KodyAnderson1/TrainReservationSystem",
+    description: TrainReservationsDescription,
+    imagePath: trainReservations,
+    stack: ["Java"],
+  },
+
+  {
+    projectName: "TV / Movies Search",
+    websiteURL: "",
+    githubURL: "https://github.com/KodyAnderson1/FavoriteMotionPictures",
+    description: moviesDesc,
+    imagePath: "",
+    stack: ["TypeScript", "React", "Bootstrap"],
   },
 
   // {
