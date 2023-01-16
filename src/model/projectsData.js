@@ -4,6 +4,7 @@ import taskifyPicture from "../images/project_imgs/taskify.png";
 import gradeCalculator from "../images/project_imgs/grade-calculator.png";
 import student from "../images/project_imgs/student_full_stack.png";
 import notesApp from "../images/project_imgs/Notes_markdown_app.png";
+import sudokuImg from "../images/project_imgs/java_sudoku.png";
 
 const portfolioWebsiteDescription =
   "This website was built with React and Bootstrap and primarily made following a tutorial on Udemy. " +
@@ -94,6 +95,13 @@ export const projects = [
     tutorialName: "Youtube",
     tutorialURL: "https://www.youtube.com/watch?v=j898RGRw0b4",
     stack: ["CSS", "TypeScript", "React"],
+  },
+  {
+    projectName: "Sudoku",
+    githubURL: "https://github.com/KodyAnderson1/SudokuDesktopJava",
+    description: "Not doing descriptions anymore =(",
+    imagePath: sudokuImg,
+    stack: ["Java"],
   },
   {
     projectName: "Train Reservation System",
