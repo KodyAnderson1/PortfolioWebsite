@@ -21,4 +21,4 @@ To install on your local machine, pull the GitHub repo, navigate into the projec
 
 ## Future Development
 - [x] Projects / Skills section pulls from JSON file(s) and maps over reusable component
-- Use a database to hold data
+- [ ] Database Integration. Firebase real-time most likely. (Site is hosted on Firebase)
