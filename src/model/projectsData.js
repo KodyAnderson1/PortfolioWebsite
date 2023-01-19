@@ -5,55 +5,13 @@ import gradeCalculator from "../images/project_imgs/grade-calculator.png";
 import student from "../images/project_imgs/student_full_stack.png";
 import notesApp from "../images/project_imgs/Notes_markdown_app.png";
 import sudokuImg from "../images/project_imgs/java_sudoku.png";
-
-const portfolioWebsiteDescription =
-  "This website was built with React and Bootstrap and primarily made following a tutorial on Udemy. " +
-  "I Mainly learned CSS styling (using custom classes) and making minor changes using Bootstrap shorthand." +
-  " The Experience & Timeline section is a prominent example of new concepts: z-index, text manipulation, and predefined colors.";
-const TrainReservationsDescription =
-  "This project was built in concert with four others during a semester-long group project in Software Engineering." +
-  " We utilized agile methodology, specifically SCRUM, for our project management methodology." +
-  " We also used Trello as a project management tool, Github (heavily) as version control, and Java as our programming language.";
-const taskifyDescription =
-  "This website was built with React and Typescript and was primarily made to familiarize myself with typescript following a youtube tutorial." +
-  " I also learned how to create drag-and-drop components during the process—hosted by firebase.";
-const StudentDescription =
-  "This project is a simple full-stack application built with Java Spring Boot, React, and MySQL." +
-  " This project is a WIP, and I plan to expand on it to create a student management application for students, faculty, and admins." +
-  " To see installation instructions, view the readme for the project on GitHub.";
-
-const GCDescription =
-  "This website was built as a class project for Client-Side Programming." +
-  " We learned HTML, CSS, Javascript, and Bootstrap with a significant focus on React." +
-  " We also learned about Firebase Hosting, it's real-time database, and user authentication." +
-  " All of which is integrated into the app.";
-const GCAdditional = "To view with prefilled data:";
-const GcUlList = [
-  'Click "Sign in with email"',
-  "Email: gradecalculator@example.com",
-  "Password: 123456",
-];
-
-const NotesAppDesc =
-  "This note-taking application uses React and TypeScript with a react library to implement markdown in the body to style the text as the user sees fit." +
-  " It can search by the title of the notes or by the tags the user creates when making or editing a note." +
-  " Tags are also able to be edited or deleted. End goal of this project will be to connect to a database instead of using local storage.";
-
-const moviesDesc =
-  "This application uses TypeScript and React to search the TV Maze API and favorite and tv shows or movies you can find!";
-// const noWestCollectiveDescription =
-//   "This is a website for a club at The University of West Florida (UWF). The site was built with React and Tailwind CSS.";
+import jobTacker from "../images/project_imgs/ApplicationTracker.png";
 
 export const projects = [
   {
     projectName: "Grade Calculator",
     websiteURL: "https://grade-calculator-uwf.web.app/courses",
     githubURL: "https://github.com/KodyAnderson1/GradeTracker",
-    description: GCDescription,
-    additionalDescription: {
-      description: GCAdditional,
-      ULDescription: GcUlList,
-    },
     stack: ["React", "JavaScript", "NoSQL"],
     imagePath: gradeCalculator,
   },
@@ -61,64 +19,54 @@ export const projects = [
     projectName: "Portfolio Website",
     websiteURL: "https://kanderson.dev/",
     githubURL: "https://github.com/KodyAnderson1/PortfolioWebsite",
-    description: portfolioWebsiteDescription,
     imagePath: portfolioWebsite,
-    tutorialName: "Udemy",
-    tutorialURL: "https://www.udemy.com/course/build-portfolio-with-reactjs-and-bootstrap/",
     stack: ["Bootstrap", "React", "JavaScript"],
   },
   {
-    projectName: "Student Management System",
+    projectName: "Job/Application Tracker",
+    githubURL: "https://github.com/KodyAnderson1/ApplicationTracker",
+    imagePath: jobTacker,
+    stack: ["React", "Express", "MongoDB"],
+  },
+  {
+    projectName: "Student Management Full Stack",
     githubURL: "https://github.com/KodyAnderson1/StudentDatabaseFullStack",
-    description: StudentDescription,
     imagePath: student,
-    tutorialName: "Youtube",
-    tutorialURL: "https://www.youtube.com/watch?v=O_XL9oQ1_To",
     stack: ["React", "Java", "MySQL"],
   },
   {
     projectName: "Taskify",
     websiteURL: "https://taskify-a2209.web.app/",
     githubURL: "https://github.com/KodyAnderson1/taskify",
-    description: taskifyDescription,
     imagePath: taskifyPicture,
-    tutorialName: "Youtube",
-    tutorialURL: "https://www.youtube.com/watch?v=FJDVKeh7RJI",
     stack: ["Bootstrap", "TypeScript", "React"],
   },
   {
     projectName: "Notes App",
     websiteURL: "https://notesapp-c9688.web.app/",
     githubURL: "https://github.com/KodyAnderson1/MarkdownNotesApp",
-    description: NotesAppDesc,
     imagePath: notesApp,
-    tutorialName: "Youtube",
-    tutorialURL: "https://www.youtube.com/watch?v=j898RGRw0b4",
     stack: ["CSS", "TypeScript", "React"],
   },
   {
     projectName: "Sudoku",
     githubURL: "https://github.com/KodyAnderson1/SudokuDesktopJava",
-    description: "Not doing descriptions anymore =(",
     imagePath: sudokuImg,
     stack: ["Java"],
   },
   {
     projectName: "Train Reservation System",
     githubURL: "https://github.com/KodyAnderson1/TrainReservationSystem",
-    description: TrainReservationsDescription,
     imagePath: trainReservations,
     stack: ["Java"],
   },
-
-  {
-    projectName: "TV / Movies Search",
-    websiteURL: "",
-    githubURL: "https://github.com/KodyAnderson1/FavoriteMotionPictures",
-    description: moviesDesc,
-    imagePath: "",
-    stack: ["TypeScript", "React", "Bootstrap"],
-  },
+  // {
+  //   projectName: "TV / Movies Search",
+  //   websiteURL: "",
+  //   githubURL: "https://github.com/KodyAnderson1/FavoriteMotionPictures",
+  //   imagePath: "",
+  //   stack: ["TypeScript", "React", "Bootstrap"],
+  // },
 
   // {
   //   projectName: "No.West Collective",
