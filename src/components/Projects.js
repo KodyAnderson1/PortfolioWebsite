@@ -1,8 +1,8 @@
 import React from "react";
-import { Card, Row, Col } from "react-bootstrap";
+import { Card, Row, Col, Badge } from "react-bootstrap";
 import { AiFillGithub } from "react-icons/ai";
 import { CgWebsite } from "react-icons/cg";
-import { projects } from "../model/projectsData";
+import { projects, status } from "../model/projectsData";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
@@ -102,7 +102,12 @@ function ProjectCard(props) {
   return (
     <Col className="d-flex justify-content-center">
       <Card className="bg-dark text-white project-card">
-        <Card.Img src={project.imagePath} onClick={() => window.open(`${project.githubURL}`)} />
+        <div className="card-txt">
+          <Badge bg={project.status === "Complete" ? "success" : "warning"} className="card-status">
+            {project.status}
+          </Badge>
+          <Card.Img src={project.imagePath} onClick={() => window.open(`${project.githubURL}`)} />
+        </div>
         <Card.Title className="mt-4 ms-2">
           <Row>
             <Col xs={9} className="d-flex justify-content-start">

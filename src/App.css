@@ -324,7 +324,7 @@ nav ul li {
 .project-card img {
   cursor: pointer;
   object-fit: fill !important;
-  height: 65%;
+  height: 15rem;
   width: 100%;
 }
 
@@ -339,4 +339,16 @@ nav ul li {
   border-radius: 1rem;
   display: flex;
   justify-content: center;
+}
+
+.card-status {
+  position: absolute;
+  right: 0;
+  color: #000000 !important;
+  font-weight: bold !important;
+  font-size: 1rem !important;
+}
+
+.card-txt {
+  position: relative;
 }

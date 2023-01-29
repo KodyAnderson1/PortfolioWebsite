@@ -5,7 +5,13 @@ import gradeCalculator from "../images/project_imgs/grade-calculator.png";
 import student from "../images/project_imgs/student_full_stack.png";
 import notesApp from "../images/project_imgs/Notes_markdown_app.png";
 import sudokuImg from "../images/project_imgs/java_sudoku.png";
-import jobTacker from "../images/project_imgs/ApplicationTracker.png";
+import jobTacker from "../images/project_imgs/updatedAppTracker.png";
+
+export const status = {
+  IN_PROGRESS: "In-Progress",
+  COMPLETE: "Complete",
+  UPDATING: "Updating",
+};
 
 export const projects = [
   {
@@ -14,6 +20,7 @@ export const projects = [
     githubURL: "https://github.com/KodyAnderson1/GradeTracker",
     stack: ["React", "JavaScript", "NoSQL"],
     imagePath: gradeCalculator,
+    status: status.COMPLETE,
   },
   {
     projectName: "Portfolio Website",
@@ -21,18 +28,21 @@ export const projects = [
     githubURL: "https://github.com/KodyAnderson1/PortfolioWebsite",
     imagePath: portfolioWebsite,
     stack: ["Bootstrap", "React", "JavaScript"],
+    status: status.COMPLETE,
   },
   {
     projectName: "Job/Application Tracker",
     githubURL: "https://github.com/KodyAnderson1/ApplicationTracker",
     imagePath: jobTacker,
     stack: ["React", "Express", "MongoDB"],
+    status: status.IN_PROGRESS,
   },
   {
     projectName: "Student Management Full Stack",
     githubURL: "https://github.com/KodyAnderson1/StudentDatabaseFullStack",
     imagePath: student,
     stack: ["React", "Java", "MySQL"],
+    status: status.IN_PROGRESS,
   },
   {
     projectName: "Taskify",
@@ -40,6 +50,7 @@ export const projects = [
     githubURL: "https://github.com/KodyAnderson1/taskify",
     imagePath: taskifyPicture,
     stack: ["Bootstrap", "TypeScript", "React"],
+    status: status.COMPLETE,
   },
   {
     projectName: "Notes App",
@@ -47,18 +58,21 @@ export const projects = [
     githubURL: "https://github.com/KodyAnderson1/MarkdownNotesApp",
     imagePath: notesApp,
     stack: ["CSS", "TypeScript", "React"],
+    status: status.COMPLETE,
   },
   {
     projectName: "Sudoku",
     githubURL: "https://github.com/KodyAnderson1/SudokuDesktopJava",
     imagePath: sudokuImg,
     stack: ["Java"],
+    status: status.COMPLETE,
   },
   {
     projectName: "Train Reservation System",
     githubURL: "https://github.com/KodyAnderson1/TrainReservationSystem",
     imagePath: trainReservations,
     stack: ["Java"],
+    status: status.COMPLETE,
   },
   // {
   //   projectName: "TV / Movies Search",
